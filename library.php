@@ -378,7 +378,7 @@ function query_books( $atts ) {
     while ($the_query->have_posts()) {
       $the_query->the_post();
 
-      $title = the_title();
+      $title = get_the_title();
       $bauthor = get_field('author');
       $bsize = get_field('size');
       $bformat = get_field('format');
